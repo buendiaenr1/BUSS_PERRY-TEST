@@ -11,7 +11,7 @@
 # crea la evaluación correspondiente en puntos y crea la evaluación correspondiente
 # en promedios
 
-dat <- read.csv(file = 'hbp1.csv',sep=",")
+dat <- read.csv(file = 'mbp3.csv',sep=",")
 
 # corregir captura y transcribir significado a numeros
 for (j in 2:30){
@@ -51,6 +51,7 @@ dat[1]	# mostrar para verificar funcionamiento correcto
 # Hostilidad (4, 8, 12, 16, 20, 23, 26, 28) 
 # (Buendia Lozada, Alatriste Flores, Islas Guerra, López Alonso, & Chávez Erives, 2019).
 
+# items correspondientes a categoria
 ira=c(3, 7, 11, 15, 2, 22, 25)
 af=c(1, 5, 9, 13, 17, 21, 24, 27, 29)
 av=c(6,18,10,14,19)
@@ -143,7 +144,7 @@ print(interp)
 print(" ")
 
 #interpretación general de Buss 1992
-p=(p1+p2+p3+p4)/4
+p=p1+p2+p3+p4
 muybajo=0:51
 bajo=52:67
 medio=68:82
